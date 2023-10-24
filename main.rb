@@ -4,9 +4,9 @@ require_relative 'question'
 
 puts "Welcome to the Math Game!"
 puts "Enter Player 1's name: "
-player1 = Player.new(gets.chomp)
+player1 = Player.new(UIHandler.get_user_input(""))
 puts "Enter Player 2's name: "
-player2 = Player.new(gets.chomp)
+player2 = Player.new(UIHandler.get_user_input(""))
 game = Game.new(player1, player2)
 
 loop do
